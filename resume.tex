@@ -12,10 +12,16 @@
 \setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of the paragraph
 \usepackage{lipsum}
 \usepackage{enumitem}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+
 \setlist{nosep}
 %\setlist{nolistsep}                          %% no space before itemize
-\usepackage{enumitem}                        %% for eliminating space before itemize
-\usepackage[margin=0.75in, top=0.8in,bottom=0.8in]{geometry}         %% page margins >0.5" and < 1.0"
+%\usepackage{enumitem}                        %% for eliminating space before itemize
+\usepackage[margin=0.70in, top=0.6in,bottom=0.6in]{geometry}         %% page margins >0.5" and < 1.0"
 \pagenumbering{gobble}
 
 \begin{document}
@@ -25,8 +31,7 @@ Computer Science and Engineering      \hfill  Email: \texttt{sakshams@iitk.ac.in
 Indian Institute of Technology Kanpur	\hfill Mobile: {+91-7755058004}\\
 
 
-\textbf{\Large{Educational Qualification}}\\
-\rule{\textwidth}{01pt}
+\section*{Educational Qualifications}
 %%	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \textbf{\large{Bachelor of Technology, Computer Science and Engineering}} \hfill\textit{ July'14-Present}\\
 Indian Institute of Technology, Kanpur\\
@@ -35,14 +40,13 @@ Cumulative Performance Index: 10.0\\
 \textbf{\large{All India Senior School Certificate Examination(AISSCE) - CBSE}} \hfill\textit{ 2014}\\
 Overall percentage: 97.6\%\\
 D.A.V. Public School, Amritsar\\
-Science Stream\\
 \\
 \textbf{\large{All India Secondary School Examination (AISSE) - CBSE}} \hfill\textit{ 2012}\\
 Cumulative Grade Point Average(CGPA): 10\\
-D.A.V. Public School, Amritsar\\
+D.A.V. Public School, Amritsar
 
-\textbf{\Large{Academic Achievements and Scholarships}}\\
-\rule{\textwidth}{01pt}
+
+\section*{Academic Achievements and Scholarships}
 \begin {itemize}
 %\setlength\itemsep{0em}		%% set the separation
 \item Cumulative Point Index of 10.0 after Semester I and II                                        \hfill \textit{2014-15}
@@ -54,10 +58,7 @@ D.A.V. Public School, Amritsar\\
 \item Qualified National Standard Examination in Physics (NSEP) twice                               \hfill \textit{2012-13}
 \end{itemize}
 
-\vspace{5mm}
-
-\textbf{\Large{Projects}}\\
-\rule{\textwidth}{01.0pt}
+\section*{Projects}
 \begin {itemize}
 
 \item \textbf{\large{Microsoft code.fun.do Finalists Forum 2015}} \hfill\textit{ May'2015-Jul'2015}\\ \emph{5th National in Coding Milestone}
@@ -85,7 +86,7 @@ D.A.V. Public School, Amritsar\\
 \\
     \end{itemize}
 
-\item \textbf{\large{NASA AMES Space Settlement Design Contest}} \hfill\textit{ Dec'2011-Mar'2012}\\ \emph{Team Leader}
+\item \textbf{\large{NASA AMES Space Settlement Design Contest}} \hfill\textit{ Dec'2011-Mar'2012}\\ \emph{Team Leader, Winning Team}
     \begin{itemize}
     \setlength \itemsep{0em}
     \item Designed in detail a Space Settlement capable of settling 14000 permanent residents in orbit around the earth
@@ -96,38 +97,23 @@ D.A.V. Public School, Amritsar\\
 
 \end{itemize}
 
+\section*{Work and Volunteer Experience}
+\begin{tabular}{r|p{11cm}}
+\textsc{Summer 2015} & Web Development Intern at \textsc{Hackcave}, \emph{IIT Kanpur NYC Office}\\
+&\footnotesize{Worked on developing a scaleable web-app. \newline Used Scala with Akka, ElasticSearch, Node.js and Dart.}\\\multicolumn{2}{c}{} \\
 
-\textbf{\Large{Work Experience}}\\
-\rule{\textwidth}{01pt}
-\begin {itemize}
+\textsc{Apr'15-Present} & Secretary at \textsc{Programming Club}, \emph{IIT Kanpur}\\
+&\footnotesize{Helped organize workshops related to programming. \newline Promoted programming culture among the fresher batch of 2015.}\\\multicolumn{2}{c}{} \\
 
-\item \textbf{\large{Hackcave, IIT Kanpur NYC Office}} \hfill\textit{ May'15 - Jul'15}\\ \emph{\large{Web Development Intern}}
-    \begin{itemize}
-    \setlength \itemsep{0em}	 
-    \item Worked on developing a scaleable web-app.
-    \item Used Scala with Akka, ElasticSearch, Node.js and Dart.\\
-    \end{itemize}
+\textsc{Apr'15-Present} & Student Guide at \textsc{Counselling Service}, \emph{IIT Kanpur}\\
+&\footnotesize{Helped the fresher batch of 2015 settle in to college life. \newline Helped organize the Orientation of the fresher batch, 2015.}
 
-\item \textbf{\large{Programming Club, IIT Kanpur}} \hfill\textit{ Apr'15 - Present}\\ \emph{\large{Secretary}}
-    \begin{itemize}
-    \setlength \itemsep{0em}
-    \item Helped organize workshops related to programming.
-    \item Promoted programming culture among the fresher batch of 2015.\\
-    \end{itemize}
-
-\item \textbf{\large{Counselling Service, IIT Kanpur}} \hfill\textit{ Apr'15 - Present}\\ \emph{\large{Student Guide}}
-    \begin{itemize}
-    \setlength \itemsep{0em}
-    \item Helped the fresher batch of 2015 settle in to college life.
-    \item Helped organize the Orientation of the fresher batch, 2015.
-    \end{itemize}
-
-\end{itemize}
+\end{tabular}
 
 \vspace{5mm}
 
-\textbf{\Large{Technical Skills}}\\
-\rule{\textwidth}{01pt}
+
+\section*{Technical Skills}
 \begin{tabular}{L{0.05cm} L{5cm} l}
 &Web Development 	        &HTML/CSS, Node.js, Javascript, Dart, PHP \\
 &Programming Languages      &C/C++, Python, Java, C\#, Scala, Shell Scripting\\
@@ -135,34 +121,26 @@ D.A.V. Public School, Amritsar\\
 &App Development		    &Windows Phone\\
 &Utilities                  &Vim, Git, Microsoft Visual Studio, GNU Octave\\
 &Web Frameworks             &Node.js with Express.js and Jade, Scala with Akka, LAMP stack\\
-&CAD	                	&Autodesk Inventor, 3ds\\
+&CAD	                	&Autodesk Inventor, Autodesk 3dsMax\\
 &Hardware                   &Microsoft Kinect, Arduino\\
 
-\end{tabular}
-\vspace{6mm}
+\end{tabular}\\
 
 
-
-\textbf{\Large{Relevant Courses}} \\
-\rule{\textwidth}{01pt}
+\section*{Relevant Courses}
 \begin{tabular}{L{0.05cm} L{6cm} L{5.5cm} L{5.5cm}}
 & Introduction to Programming(A*)   & Introduction to Calculus        \\
 & Linear Algebra                    & Ordinary Differential  Equations\\
-\end{tabular}\\\\
+\end{tabular}\\
 
 
-
-
-\textbf{\Large{Other Interests}}\\
-\rule{\textwidth}{01pt}
-
+\section*{Interests}
 \begin {itemize}
 \setlength\itemsep{0em}		%% set the separation
-\item Image Processing and Parallel Processing
-\item Algorithms
-\item Machine Learning
 \item Web Development
-\item Artificial Intelligence
+\item Software and App Development
+\item Linux and Open-Source
+\item Machine Learning
 \end{itemize}
 
 %%	\blindtext		%% used to print the default text at any place
