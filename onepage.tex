@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+%%\usepackage{showframe}        %% used to show the frames
+\usepackage{blindtext}          %% creates dummy text
+\usepackage{multicol}           %% allows to create more than two columns locally or globally
+%\usepackage{flenqn}            %% left-alignment of formula
+%\usepackage{leqno}             %% labels formula on left hand side instead of right
+\usepackage{array}              %% for adjusting column widths in table
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}     %% new column type
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}       %% new column type            
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}      %% new column type
+\usepackage{hyperref}
+\setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of the paragraph
+\usepackage{lipsum}
+\usepackage{enumitem}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+
+\setlist{nosep}
+%\setlist{nolistsep}                          %% no space before itemize
+%\usepackage{enumitem}                        %% for eliminating space before itemize
+\usepackage[margin=0.40in, top=0.3in,bottom=0.3in]{geometry}         %% page margins >0.5" and < 1.0"
+\pagenumbering{gobble}
+
+\begin{document}
+\textbf{\huge{Saksham Sharma}}\\	%% to write bold and large 
+Sophomore Undergraduate    \hfill Email: \texttt{saksham0808@gmail.com}\\
+Computer Science and Engineering      \hfill  Email: \texttt{sakshams@iitk.ac.in}\\
+Indian Institute of Technology Kanpur	\hfill Mobile: {+91-7755058004}
+
+\vspace{-0.3cm}
+\section*{Educational Qualifications}
+\vspace{-0.2cm}
+\textbf{\large{B.Tech Computer Science and Engineering:}} Indian Institute of Technology, Kanpur \hfill\textit{ July'14-Present}\\
+Cumulative Performance Index: 10.0
+\vspace{0.1cm}
+
+\textbf{\large{Senior Secondary (AISSCE) - CBSE:}} D.A.V. Public School, Amritsar \hfill\textit{ 2014}\\
+Overall percentage: 97.6\%
+
+\vspace{-0.4cm}
+\section*{Academic Achievements and Scholarships}
+\vspace{-0.2cm}
+\begin {itemize}
+\item All India Rank 138 in Joint Entrance Exam Advanced 2014 among 150,000 candidates            	\hfill \textit{2014}
+\item All India Rank 10 in Joint Entrance Exam Mains 2014 among 1.5 million candidates              \hfill \textit{2014}
+\item Received the Aditya Birla Group Scholarship along with 15 other IITans                        \hfill \textit{2014}
+\item Kishore Vigyanik Protsahn Yogna (KVPY), National Talent Search Scholarship (NTSE) awardee
+      \hfill \textit{2013,10}
+\end{itemize}
+
+\vspace{-0.4cm}
+\section*{Projects}
+\vspace{-0.2cm}
+\begin {itemize}
+
+\item \textbf{\large{Web Developer at IIT Kanpur}} \emph{Supervisor: Prof. Manindra Agarwal} \hfill\textit{May'2015-Present}
+  \begin{itemize}[leftmargin=*]
+    \setlength \itemsep{0em}
+    \item Working on developing a scaleable web-app using Scala with Akka, ElasticSearch, Node.js, Dart, Angular. 
+    \item Worked on the backend and the frontend team, and handled an independent division of the app.
+  \end{itemize}
+
+\vspace{0.1cm}
+\item \textbf{\large{Microsoft code.fun.do 2014 and 2015}} \emph{Winning team member twice} \hfill\textit{ Jan'2015 and Sep'2016}
+  \begin{itemize}[leftmargin=*]
+    \setlength \itemsep{0em}
+    \item \textit{Fresher} Designed a graphing app to plot implicit 2D mathematical functions for Windows Phone.
+    \item \textit{Sophomore} Made a frontend to an open source program simulation code for Microsoft Windows.
+    \end{itemize}
+
+\vspace{0.1cm}
+\item \textbf{\large{ABU Robocon 2015}} \emph{Supervisor: Prof. Bhasker Dasgupta} \hfill\textit{ Oct'2014-Mar'2015}
+  \begin{itemize}[leftmargin=*]
+    \setlength \itemsep{0em}
+    \item Worked on making 2 semi-autonomous robots capable of playing badminton on a full court.
+    \item Image-processing to track the shuttle, predict trajectory. Used Arduino and Odroid for robot control.
+    \item Used Microsoft Kinect to get depth data. Also worked with stereo-vision.
+    \end{itemize}
+
+\vspace{0.1cm}
+\item \textbf{\large{Microsoft code.fun.do Finalists Forum 2015}} \emph{National 5th in Coding Milestone} \hfill\textit{ May'2015-Jul'2015}
+  \begin{itemize}[leftmargin=*]
+    \setlength \itemsep{0em}
+    \item Developed an app to help users learn programming in their spare time.
+    \item An extensive app in C\#. Wrote backend web service in Node.js to compile, run and verify user's input codes.
+    \end{itemize}
+\end{itemize}
+
+\vspace{-0.4cm}
+\section*{Work and Volunteer Experience}
+\vspace{-0.2cm}
+%\begin{table}
+\bgroup
+\def\arraystretch{0.6}
+\begin{tabular}{r|p{20cm}}
+\textsc{May'15-July'15} & Web Intern at \textsc{IIT Kanpur}, under Prof. Manindra Agarwal\\
+                        &\footnotesize{Was adjudged as one of the best interns.}\\\multicolumn{2}{c}{} \\
+\textsc{Apr'15-Present} & Secretary at \textsc{Programming Club}, \emph{IIT Kanpur}\\
+&\footnotesize{Organized Freshers' Programming Contest and programming workshops.}\\\multicolumn{2}{c}{} \\
+
+\textsc{Aug'15-Present} & Technical Secretary at \textsc{Association for Computing Activities}, \emph{IIT Kanpur}\\
+&\footnotesize{Member of the student body of CSE department, IIT Kanpur.}\\\multicolumn{2}{c}{} \\
+
+\textsc{Apr'15-Present} & Student Guide at \textsc{Counselling Service}, \emph{IIT Kanpur}\\
+&\footnotesize{Helped the fresher batch of 2015 settle in to college life.}
+\end{tabular}
+\egroup
+
+\vspace{-0.4cm}
+\section*{Technical Skills}
+\vspace{-0.2cm}
+\begin{tabular}{L{0.05cm} L{5cm} l}
+  &Web Development 	        &Node.js (with Express), Scala (with Akka) Javascript, Dart, PHP, Angular\\
+&Programming Languages      &C/C++, Python, Java, C\#, Scala, Haskell\\
+&Operating Systems	        &Arch Linux, Gentoo, Ubuntu\\
+&Utilities                  &Vim, Git, Shell Scripting, Microsoft Visual Studio, GNU Octave\\
+&Platforms                  &Windows Phone, Microsoft Kinect, Arduino\\
+
+\end{tabular}
+
+\vspace{-0.4cm}
+\section*{Relevant Courses}
+\vspace{-0.2cm}
+\begin{tabular}{L{0.05cm} L{5.8cm} L{6.5cm} L{7.5cm} L{8cm} L{13cm}}
+  & Introduction to Programming(A*)  & Abstract Algebra  & Introduction to Calculus\\
+& Linear Algebra                     & Ordinary Differential  Equations & Introduction to Logic(*)\\
+& Discrete Mathematics(*)            & Data Structures and Algorithms(**) & Computer Organization(**)\\
+\end{tabular}
+
+\vspace{-0.2cm}
+\begin{flushright}
+  \footnotesize{Received A* grade for exceptional performance: A*}\\
+  \footnotesize{Course in progress:$\ \ $ *}\\
+  \footnotesize{Course to be completed by April '16: **}
+\end{flushright}
+\end{document}
+
