@@ -3,3 +3,5 @@
 *.log
 *.dvi
 *.ps
+auto/
+auto/*
