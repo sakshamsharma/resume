@@ -21,6 +21,12 @@
 
 \documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
 
+\newcommand{\onepage}[1]{
+  \ifdefined\onep
+  #1
+  \fi
+}
+
 \begin{document}
 
 \namesection{Saksham}{Sharma}{
@@ -35,7 +41,7 @@
   \descriptbig{Indian Institute of -\newline Technology Kanpur}
 
   \descript{B.Tech in Computer Science and Engineering}
-  \location{2014-Present | CPI: \textbf{10.0/10.0}}
+  \location{2014-Present | CPI: \textit{10.0/10.0}}
 
   \sectionspace
 
@@ -78,7 +84,7 @@
 
   \descriptbig{Web Development}
   Node.js (with Express.js) \textbullet{} JavaScript \textbullet{} TypeScript
-  \textbullet{} Dart \textbullet{} Angular \textbullet Scala (with Akka) \\
+  \textbullet{} Angular \textbullet Scala (with Akka) \\
 
   \sectionspace
 
@@ -110,24 +116,24 @@
 \hfill
 \begin{minipage}[t]{0.66\textwidth}
 
-  \section{Awards}
+  \section{Awards and Achievements}
 
   \begin{tabular}{rll}
-    2014-16	 & \textbf{Institute Rank 1}, IIT Kanpur (CPI of 10.0 all 4 Semesters)\\
+    2014-16	 & \textbf{Institute Rank 1}, IIT Kanpur (CPI 10.0/10.0 in all 4 Semesters)\\
     2014	 & \textbf{All India Rank 10}, JEE Mains, among 1.5 million candidates\\
     2014	 & \textbf{All India Rank 138}, JEE Advanced, among 150,000 candidates\\
     2015	 & Academic Excellence Award IIT Kanpur\\
     2014   & Aditya Birla Group Scholarship awardee\\
-    2014   & Kishore Vaigyanik Protsahan Yojana (KVPY) Scholar\\
-    2010   & National Talent Search (NTS) Scholar\\
-    2012,13 & National top 400 in National Standard Examination
-              in Physics twice
+    2014   & Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship awardee\\
+    2010   & National Talent Search (NTS) Scholarship awardee\\
+    \onepage{2012,13 & National top 400 in National Standard
+                       Examination in Physics twice}
   \end{tabular}
 
   \sectionspace % Some whitespace after the section
 
 
-  \section{Experience}
+  \section{Experience and Projects}
 
   \runsubsection{}
   \descriptnonewline{Research Fellow} \location{| May'16-July'16}
@@ -135,8 +141,8 @@
   \vspace{\topsep}
   \begin{tightitemize}
   \item Developed and evaluated tool (in Scala) to rewrite
-    mathematical expressions to lower floating point errors, using
-    Genetic Programming
+    mathematical expressions to lower floating point errors\onepage{, using
+      Genetic Programming}
   \item	Obtained successful results, improving expressions by ~50\%,
     tested on expressions taken from various research papers and other
     sources
@@ -152,9 +158,10 @@
 
   \begin{tightitemize}
   \item Was adjudged as one of the best interns while being a freshman
-  \item Worked on a large scale web application with an extensive
-    technology stack, in a team setup, comprising of code reviews,
-    documentation etc
+  \item Worked on a large scale polyglot web application with an extensive
+    technology stack, in a team setup, comprising of code reviews etc
+  \item Continue volunteering code, as a full-stack developer;
+    managing the search part; and work on the backend, frontend and infra
   \end{tightitemize}
 
   \sectionspace
@@ -162,7 +169,7 @@
   \runsubsection{}
   \descriptnonewline{Coordinator}\location{Programming Club | Apr'16 - Present}
   \begin{tightitemize}
-  \item Rewrote, deployed and populated the Programming Club website \href{https://pclub.in}{pclub.in}
+  \item Rewrote, deployed and populated Programming Club website \href{https://pclub.in}{pclub.in}
   \item Helped organize the Science and Technology Council Summer Camp
     '16
   \item Previously as a \textit{Secretary}, Organized Freshers'
@@ -173,13 +180,12 @@
   \sectionspace
 
   \runsubsection{}
-  \descriptnonewline{ABU Robocon IITK 2015 Team Member}\location{Under
-    Prof. Bhaskardas Gupta}
+  \descriptnonewline{ABU Robocon IITK Team Member '15}\location{| Under
+    Dr. Bhaskardas Gupta}
   \begin{tightitemize}
   \item Worked on making 2 semi-autonomous robots capable of playing badminton on a full size court
   \item Image-processing to track, predict shuttle. Arduino and Odroid for control
-  \item Used stereo-vision, and later Microsoft Kinect to source depth data
-  \item Involved in heavy optimizations to ensure performance for response time
+  \item Used stereo-vision, and later Microsoft Kinect for depth data
   \item Finished 11th among 85 participating teams on a National Level
   \end{tightitemize}
 
@@ -194,8 +200,8 @@
     Phone
   \item Made a front end to an open source program simulation code
     using JS
-  \item National \textit{5th} in finals round Coding milestone, for
-    making a platform to learn programming; making the app in
+  \item National \textit{5th} in finals round Coding milestone.
+    Made platform to learn programming; app in
     \textit{C\#}, backend for program running in \textit{node.js}.
   \end{tightitemize}
 
@@ -213,20 +219,20 @@
   \section{Miscellaneous}
   \vspace{\topsep}
   \begin{tightitemize}
-  \item Blog about Linux, programming and some puzzling questions at
+  \item Blog about Linux, programming etc at
     \href{http://acehack.org}{acehack.org}
   \item Contribute often to Open Source
-    (\href{https://github.com/sakshamsharma}{Github}) and have many
+    (\href{https://github.com/sakshamsharma}{Github}), have many
     personal projects
   \item	Attended a full paper-reading seminar-like course on
     Approximate Computing during Summer ’16 at the Max Planck
     Institute
-  \item Administer various servers in IIT Kanpur, deploying and
+  \item Administer \onepage{various} servers in IIT Kanpur; deploying,
     automating services
   \item A \textit{Linux enthusiast}, tinker around with my Linux box
     in free time
   \item Various research talks, seminars and guest lectures attended
-    while in Germany
+    in Germany
   \end{tightitemize}
 
 \end{minipage}

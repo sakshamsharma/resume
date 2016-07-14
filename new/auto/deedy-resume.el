@@ -2,7 +2,7 @@
  "deedy-resume"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "hmargin=1.25cm" "vmargin=0.75cm") ("xcolor" "usenames" "dvipsnames") ("textpos" "absolute") ("isodate" "UKenglish")))
+                     '(("geometry" "hmargin=0.9cm" "vmargin=0.50cm") ("xcolor" "usenames" "dvipsnames") ("textpos" "absolute") ("isodate" "UKenglish")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -23,6 +23,7 @@
    (TeX-add-symbols
     '("location" 1)
     '("descriptnonewline" 1)
+    '("descriptbig" 1)
     '("descript" 1)
     '("runsubsection" 1)
     '("namesection" 3)
