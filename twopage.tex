@@ -1,0 +1,240 @@
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[margin=0.40in, top=0.2in,bottom=0.3in]{geometry}
+\usepackage{multicol}           %% allows to create more than two columns
+\usepackage{array}              %% for adjusting column widths in table
+\usepackage{color}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of paras
+
+\setlist{nosep}
+\pagenumbering{gobble}
+
+% modern themes
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\moderncvicons{awesome}
+\definecolor{titleblue}{RGB}{20,20,100}
+
+\newcommand{\experience}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \textit{#2}\hfill\textit{#3}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+\newcommand{\experiencetwo}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \hfill\textit{#3}\\\textit{#2}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+
+\newcommand{\education}[5]{
+\item[] \textbf{\large{#1 :}} #2 - \emph{#3: \textbf{#4}} \hfill\textit{#5}
+}
+
+
+%% Personal data
+\firstname{Saksham}
+\familyname{Sharma}
+\address{Computer Science and Engineering}{IIT Kanpur} 
+\email{saksham0808@gmail.com}
+\extrainfo{sakshams@(cse.)iitk.ac.in}
+\extrainfo{\emailsymbol\emaillink{sakshams@(cse).iitk.ac.in}}
+\social[github]{sakshamsharma}
+\homepage{http://acehack.org} 
+
+\begin{document}
+\maketitle
+\vspace{-1cm}
+\section*{Educational Qualifications}
+\begin{itemize}
+  \setlength\itemsep{0.2cm}
+  \education{Bachelor of Technology}{Indian Institute of Technology Kanpur}{CPI}{10.0/10.0}{July'14-Present}
+  \education{Senior Secondary - CBSE}{D.A.V. Public School, Amritsar}{Overall percentage}{97.6\%}{2014}
+  \education{Secondary - CBSE}{D.A.V. Public School, Amritsar}{Overall grade}{10.0/10.0}{2014}
+\end{itemize}
+
+\vspace{-0.1cm}
+\section*{Academic Achievements and Scholarships}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+\item Institute Rank \textbf{1}, IIT Kanpur (CPI 10.0/10.0 in all 4
+  semesters) \hfill \textit{2014-Present}
+\item All India Rank \textbf{10} in Joint Entrance Exam Mains 2014 among 1.5 million candidates              \hfill \textit{2014}
+\item All India Rank \textbf{138} in Joint Entrance Exam Advanced
+  2014 among 150,000 candidates            	\hfill \textit{2014}
+\item Academic Excellence Award, IIT Kanpur \hfill \textit{2014-15}
+\item Aditya Birla Group Scholarship recepient, awarded to 15 IIT freshmen.                        \hfill \textit{2014}
+\item Kishore Vigyanik Protsahn Yojna (KVPY) Scholar, Dept of Science and Technology, Govt of India
+  \hfill \textit{2013}
+\item National Talent Search (NTSE) Scholarship awardee, by NCERT, Govt\ of India
+  \hfill \textit{2010}
+\item National top 400 in National Standard Examination in Physics in grade 11 and 12. \hfill \textit{2012-13}
+\item Selected for INSPIRE Scholarship Scheme (Dept of Science and Technology, Govt of India).
+  \hfill \textit{2014}
+
+\end{itemize}
+
+\vspace{-0.1cm}
+\section*{Projects and competitions}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+  \experiencetwo{Automated Accuracy improvement for Floating Point Expressions}{Max Planck Institute for Software
+    Systems, under Dr. Eva Darulová}{May'2016-July'2016}{
+    \item Developed and evaluated a tool (in Scala) to rewrite
+      mathematical expressions to lower floating point errors, thus
+      improve accuracy for scientific and embedded applications
+    \item Obtained successful results, improving expressions by 50\%,
+      tested on expressions from various sources
+    \item Part of a larger tool being developed to optimize numerical
+      programs
+    \item Gave a talk on the same to the Programming Languages group
+  }
+  
+  \experience{Full Stack Developer}{IIT Kanpur}{May'2015-Present}{
+  \item Working on a scaleable web-app in a polyglot environment;
+    using Scala with Akka, ElasticSearch, TypeScript, Node.js, Haskell, Angular2
+  \item Implemented various functionalities on the backend and
+    frontend, managing infra
+  \item Designed a complete search functionality implemented using
+    ElasticSearch, Node.js, Scala and TypeScript
+  }
+
+  \experience{Microsoft code.fun.do 2014 and 2015}{Winning team member twice}{Jan'2015 and Sep'2016}{
+  \item \textit{Fresher} Designed a graphing app to plot implicit 2D mathematical functions for Windows Phone.
+  \item \textit{Sophomore} Made a frontend to an open source program simulation code for Microsoft Windows.
+  }
+
+  \experience{ABU Robocon 2015}{Supervisor: Dr. Bhaskar Dasgupta}{Oct'2014-Mar'2015}{
+  \item Worked on making 2 semi-autonomous robots capable of playing badminton on a full court.
+  \item Image-processing to track the shuttle, predict trajectory. Used Arduino and Odroid for robot control.
+  \item Used stereo-vision, and later Microsoft Kinect to source depth
+    data.
+  \item Finished 11th among 85 teams from all over India, at ABU Robocon
+    '15, Pune
+  }
+
+  \experience{Microsoft Build The Shield 2016}{Capture The Flag
+    hacking contest}{Mar'2015}{
+  \item Qualified National Online round, a Capture The Flag (CTF)
+    competition focused on Security and Offensive Hacking
+  \item National 10th in the onsite finals at Microsoft Campus Hyderabad
+  }
+
+  \experience{Microsoft code.fun.do Finalists Forum 2015}{National 5th in Coding Milestone}{May'2015-Jul'2015}{
+  \item Developed an app to help users learn programming in their spare time.
+  \item Implemented a frontend app using C\# for Windows Phone
+  \item Wrote backend web service (Online Judge) in Node.js to compile, run and verify user submitted programs.
+  }
+\end{itemize}
+
+\section*{Work and Volunteer Experience}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+  \experience{Development Intern}{under DoFA IIT Kanpur, Prof. Manindra Agarwal}{May'15-July'15}{
+  \item Was adjudged as one of the best interns as a freshman.
+  \item Worked on a scaleable web application with a large technology
+    stack.
+  }
+
+  \experience{Coordinator}{Programming Club, IIT
+    Kanpur}{Apr'16-Present}{
+  \item Rewrote, deployed and populated Programming Club website \href{https://pclub.in}{pclub.in}
+  \item Helped organize the Science and Technology Council Summer Camp
+    '16
+  }
+
+  \experience{Secretary}{Programming Club, IIT Kanpur}{Apr'15-Present}{
+  \item	Organized Freshers’ Programming Contest, setting and testing algorithmic questions.
+  \item	Conducted beginner programming workshops for students.
+  \item Promoted Linux use and Installed Linux on multiple systems during Linux Installation Fest.
+  \item Organized Freshers’ Programming Contest, programming workshops and Linux Install Fest
+  }
+
+  \experience{Software Corner Manager}{Techkriti '16, IIT
+    Kanpur}{Dec'15-Mar'16}{
+  \item	Designed and implemented a new Esoteric Programming language based on Assembly, and hosted a national level competition on the same.
+  \item	Wrote an Online Judge for a National High Performance Computing competition, hosted on CDAC’s Param Yuva II Supercomputer.
+  \item	Handled logistics and organization of multiple other Software related events.
+  }
+
+  \experience{Technical Secretary}{Association for Computing Activities, IIT Kanpur}{Aug'15-Present}{
+  \item	Helped in increasing familiarity of Computer Science Freshers with their department
+  \item	Mentored a group of 5 students for a semester project on Introduction to Functional Programming
+  }
+
+  \experience{Student Guide}{Counselling Service, IIT Kanpur}{July'15-Present}{
+  \item Helped 9 students adjust to the rigours of college life, by providing emotional support along with counselling.
+  \item Organized the Orientation Programme '15 for the fresher batch.
+  }
+
+\end{itemize}
+
+
+\section*{Technical Skills}
+\begin{tabular}{L{0.05cm} L{5cm} l}
+  &Web Development 	          &Node.js (with Express), JavaScript, Scala (with Akka), Angular\\
+  &Programming Languages      &C/C++, Scala, Python, Haskell, Java,
+                                Lisp, x86 Assembly\\
+  &Operating Systems	        &Gentoo Linux, Arch Linux, Ubuntu, Microsoft Windows\\
+  &Utilities                  &Emacs and Vim both, Git, GDB, Shell
+                                Utilities and scripting in Linux, \LaTeX\\
+  &Platforms                  &Windows Phone, Microsoft Kinect, Arduino\\
+\end{tabular}
+
+\section*{Relevant Courses}
+% \begin{tabular}{L{0.05cm} L{6.5cm} L{7.0cm} L{8cm} L{8cm} L{12cm}}
+\begin{tabular}{L{6.8cm} L{6.0cm} l}
+  Data Structures and Algorithms (A*) & Computer Organization (A*)
+  & Introduction to Programming (A*)\\
+  Tools for Computing (A*) & Computer Systems Security (A)
+  & Discrete Mathematics (A)\\
+  Abstract Algebra (A) & Logic in Computer Science (A)
+  & Probability and Statistics (A)\\
+  \vspace{0.3cm}
+  \footnotesize{A* grade for exceptional performance} & &
+\end{tabular}
+
+\section*{Interests}
+\begin{tabular}{L{5.5cm} L{5.5cm} l}
+  Computer Systems Security & Open Source Development
+  & Programming Languages and Approximation\\
+  Functional Programming & Web Development
+  & Linux System administration\\
+  Capture the Flag contests & &
+\end{tabular}
+
+\section*{Miscellaneous}
+\begin{itemize}
+  \item Sporadic blogger at my blog \url{http://acehack.org} about Linux, programming etc
+  \item Occasional contributor to public Open Source projects on Github
+    \url{https://github.com/sakshamsharma}.
+  \item Multiple personal projects on Github, including blogs, an
+    Emacs plugin, utility repositories.
+  \item	Administer various servers in IIT Kanpur, including the
+    community Gentoo mirror, a Gentoo-based Navya server, and the
+    server VM of Programming Club. Deploy and automate services for
+    campus
+  \item Attended a full paper-reading seminar-like course on
+    Approximate Computing during Summer ’16 at the Max Planck
+    Institute, Germany
+  \item A Linux Enthusiast, tinker around and tweak my Linux installation in my free time
+\end{itemize}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "twopage"
+%%% End:

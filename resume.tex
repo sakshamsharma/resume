@@ -1,142 +1,267 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage{blindtext}          %% creates dummy text
-\usepackage{multicol}           %% allows to create more than two columns locally or globally
-\usepackage{array}              %% for adjusting column widths in table
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}     %% new column type
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}       %% new column type
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}      %% new column type
-\usepackage{hyperref}
-\setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of the paragraph
-\usepackage{lipsum}
-\usepackage{enumitem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+% 
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\usepackage{titlesec}
-\titleformat{\section}
-  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
 
-
-\setlist{nosep}
-\usepackage[margin=0.40in, top=0.15in,bottom=0.3in]{geometry}         %% page margins >0.5" and < 1.0"
-\pagenumbering{gobble}
+\newcommand{\onepage}[1]{
+  \ifdefined\onep
+  #1
+  \fi
+}
 
 \begin{document}
-\textbf{\huge{Saksham Sharma}} \hfill Email: \href{mailto:saksham0808@gmail.com}{\textit{saksham0808@gmail.com}}\\
-Sophomore Undergraduate    \hfill  Email: \href{mailto:sakshams@cse.iitk.ac.in}{\textit{sakshams@(cse.)iitk.ac.in}}\\
-Computer Science and Engineering      \hfill Blog: \url{http://acehack.org}\\
-Indian Institute of Technology Kanpur \hfill Github: sakshamsharma
 
-\vspace{-0.4cm}
-\section*{Educational Qualifications}
-\vspace{-0.2cm}
-\textbf{\large{Bachelor of Technology:}} Indian Institute of Technology, Kanpur \emph{CPI: \textbf{10.0/10.0}} \hfill\textit{July'14-Present}\\
-\textbf{\large{Senior Secondary - CBSE:}} D.A.V. Public School, Amritsar \emph{Overall percentage: \textbf{97.6\%}} \hfill\textit{2014}
+\namesection{Saksham}{Sharma}{
+  \urlstyle{same}\url{http://acehack.org}
+  \href{mailto:sakshams@(cse.)iitk.ac.in}{sakshams@(cse.)iitk.ac.in}
+}
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+  \section{Education} 
+
+  \descriptbig{Indian Institute of -\newline Technology Kanpur}
+
+  \descript{B.Tech in Computer Science and Engineering}
+  \location{2014-Present | CPI: \textit{10.0/10.0}}
+
+  \sectionspace
+
+  \descriptbig{D.A.V. Public School}
+  \descript{Senior Secondary Grade 12}
+  \location{Overall: \textbf{97.6\%}}
+
+  \sectionspace
+
+  \section{Links} 
+
+  Github:// \href{https://github.com/sakshamsharma}{\bf sakshamsharma} \\
+  LinkedIn:// \href{https://www.linkedin.com/in/sakshamsharma}{\bf saksham-sharma} \\
+
+  \sectionspace
+
+  \section{Coursework}
+  Data Structures and Algorithms (A*)\\
+  Computer Organization (A*)\\
+  Introduction to Programming (A*)\\
+  Tools for Computing (A*)\\
+  Computer Systems Security (A)\\
+  Discrete Mathematics (A)\\
+  Abstract Algebra (A)\\
+  Logic in Computer Science (A)\\
+  Probability and Statistics (A)\\
+
+  {\footnotesize \textit{\textbf{(A* grade for exceptional performance) }}} \\
+
+  \sectionspace
+
+  \section{Skills}
+
+  \runsubsection{}
+  \descriptbig{Programming Languages}
+  C/C++ \textbullet{} Scala \textbullet{} Python \textbullet{} Haskell
+  \textbullet{} Java \textbullet{} Lisp \textbullet{} x86 Assembly
+
+  \sectionspace
+
+  \descriptbig{Web Development}
+  Node.js (with Express.js) \textbullet{} JavaScript \textbullet{} TypeScript
+  \textbullet{} Angular \textbullet Scala (with Akka) \\
+
+  \sectionspace
+
+  \descriptbig{Operating Systems}
+  Gentoo Linux \textbullet{} Arch Linux \textbullet{} Ubuntu \textbullet{}
+  Microsoft Windows
+
+  \sectionspace
+
+  \descriptbig{Utilities}
+  Emacs and Vim both \textbullet{} Git \textbullet{} GDB \textbullet{}
+  Shell Utilities in Linux \textbullet{} LaTeX
+
+  \sectionspace
+
+  \descriptbig{Platforms}
+  Windows Phone, Kinect, Arduino
+
+  \section{Interests}
+  Computer Systems Security\\
+  Programming Languages and Approximation\\
+  Open Source\\
+  Functional Programming\\
+  Web Development\\
+  Linux system administration\\
+  Capture the Flag contests
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+  \section{Awards and Achievements}
+
+  \begin{tabular}{rll}
+    2014-16	 & \textbf{Institute Rank 1}, IIT Kanpur (CPI 10.0/10.0 in all 4 Semesters)\\
+    2014	 & \textbf{All India Rank 10}, JEE Mains, among 1.5 million candidates\\
+    2014	 & \textbf{All India Rank 138}, JEE Advanced, among 150,000 candidates\\
+    2015	 & Academic Excellence Award IIT Kanpur\\
+    2014   & Aditya Birla Group Scholarship awardee\\
+    2014   & Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship awardee\\
+    2010   & National Talent Search (NTS) Scholarship awardee\\
+    \onepage{2012,13 & National top 400 in National Standard
+                       Examination in Physics twice}
+  \end{tabular}
+
+  \sectionspace % Some whitespace after the section
 
 
-\vspace{-0.5cm}
-\section*{Academic Achievements and Scholarships}
-\vspace{-0.2cm}
-\begin{itemize}
-\item All India Rank \textbf{138} in Joint Entrance Exam Advanced 2014 among 150,000 candidates            	\hfill \textit{2014}
-\item All India Rank \textbf{10} in Joint Entrance Exam Mains 2014 among 1.5 million candidates              \hfill \textit{2014}
-\item Received the Aditya Birla Group Scholarship along with 15 other IITans                        \hfill \textit{2014}
-\item Kishore Vigyanik Protsahn Yojna (KVPY), National Talent Search Scholarship (NTSE) awardee
-      \hfill \textit{2013,10}
-\end{itemize}
+  \section{Experience and Projects}
 
-\vspace{-0.6cm}
-\section*{Projects}
-\vspace{-0.2cm}
-\begin{itemize}
+  \runsubsection{}
+  \descriptnonewline{Research Fellow} \location{| May'16-July'16}
+  \location{Max Planck Institute for Software Systems, Germany}
+  \vspace{\topsep}
+  \begin{tightitemize}
+  \item Developed and evaluated tool (in Scala) to rewrite
+    mathematical expressions to lower floating point errors\onepage{, using
+      Genetic Programming}
+  \item	Obtained successful results, improving expressions by ~50\%,
+    tested on expressions taken from various research papers and other
+    sources
+  \item Part of a larger tool being developed to optimize numerical
+    programs
+  \end{tightitemize}
 
-\item \textbf{\large{Web Developer at IIT Kanpur}} \hfill\textit{May'2015-Present}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em}
-    \item Working on a scaleable web-app using Haskell, Scala with Akka, ElasticSearch, Node.js, Dart, Angular.
-    \item Worked on the backend and the frontend team, and handled an independent division of the app as a full-stack Web Developer.
-  \end{itemize}
+  \sectionspace
 
-\vspace{0.1cm}
-\item \textbf{\large{Microsoft code.fun.do 2014 and 2015}} \emph{Winning team member twice} \hfill\textit{Jan'2015 and Sep'2016}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em}
-    \item \textit{Fresher} Designed a graphing app to plot implicit 2D mathematical functions for Windows Phone.
-    \item \textit{Sophomore} Made a frontend to an open source program simulation code for Microsoft Windows.
-    \end{itemize}
+  \runsubsection{}
+  \descriptnonewline{Full stack Web Developer}\location{| May'15 - Present}
+  \location{Internship under DoFA IIT Kanpur, Prof. Manindra Agarwal}
 
-\vspace{0.1cm}
-\item \textbf{\large{ABU Robocon 2015}} \emph{Supervisor: Prof. Bhaskar Dasgupta} \hfill\textit{Oct'2014-Mar'2015}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em}
-    \item Worked on making 2 semi-autonomous robots capable of playing badminton on a full court.
-    \item Image-processing to track the shuttle, predict trajectory. Used Arduino and Odroid for robot control.
-    \item Used stereo-vision, and later Microsoft Kinect to source depth data.
-    \end{itemize}
+  \begin{tightitemize}
+  \item Was adjudged as one of the best interns while being a freshman
+  \item Worked on a large scale polyglot web application with an extensive
+    technology stack, in a team setup, comprising of code reviews etc
+  \item Continue volunteering code, as a full-stack developer;
+    managing the search part; and work on the backend, frontend and infra
+  \end{tightitemize}
 
-\vspace{0.1cm}
-\item \textbf{\large{Microsoft code.fun.do Finalists Forum 2015}} \emph{National 5th in Coding Milestone} \hfill\textit{May'2015-Jul'2015}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em}
-    \item Developed an app to help users learn programming in their spare time.
-    \item An extensive app in C\#. Wrote backend web service (Online Judge) in Node.js to compile, run and verify user submitted programs.
-    \end{itemize}
-\end{itemize}
+  \sectionspace
 
-\vspace{-0.6cm}
-\section*{Work and Volunteer Experience}
-\vspace{-0.2cm}
-%\begin{table}
-\bgroup
-\def\arraystretch{0.6}
-\begin{tabular}{r|p{20cm}}
-\textsc{May'15-July'15} & Web Intern at \textsc{IIT Kanpur}, under Prof. Manindra Agarwal, DoFA\\
-                        &\footnotesize{Was adjudged as one of the best interns.}\\\multicolumn{2}{c}{} \\
-\textsc{Apr'15-Present} & Secretary at \textsc{Programming Club}, \emph{IIT Kanpur}\\
-&\footnotesize{Organized Freshers' Programming Contest and programming workshops.}\\\multicolumn{2}{c}{} \\
+  \runsubsection{}
+  \descriptnonewline{Coordinator}\location{Programming Club | Apr'16 - Present}
+  \begin{tightitemize}
+  \item Rewrote, deployed and populated Programming Club website \href{https://pclub.in}{pclub.in}
+  \item Helped organize the Science and Technology Council Summer Camp
+    '16
+  \item Previously as a \textit{Secretary}, Organized Freshers'
+    Programming Contest, Linux install fest, and conducted beginner
+    programming workshops
+  \end{tightitemize}
 
-\textsc{Aug'15-Present} & Technical Secretary at \textsc{Association for Computing Activities}, \emph{IIT Kanpur}\\
-&\footnotesize{Member of the student body of CSE department, IIT Kanpur.}\\\multicolumn{2}{c}{} \\
+  \sectionspace
 
-\end{tabular}
-\egroup
+  \runsubsection{}
+  \descriptnonewline{ABU Robocon IITK Team Member '15}\location{| Under
+    Dr. Bhaskardas Gupta}
+  \begin{tightitemize}
+  \item Worked on making 2 semi-autonomous robots capable of playing badminton on a full size court
+  \item Image-processing to track, predict shuttle trajectory. Arduino
+    and Odroid for robot control using PS3 remote
+  \item Used stereo-vision, and later Microsoft Kinect for depth data
+    of shuttle
+  \item Finished 11th among 85 participating teams on a National Level
+  \end{tightitemize}
 
-\vspace{-0.6cm}
-\section*{Technical Skills}
-\vspace{-0.2cm}
-\begin{tabular}{L{0.05cm} L{5cm} l}
-  &Web Development 	          &Node.js (with Express), Scala (with Akka), Javascript, Dart, PHP, Angular\\
-  &Programming Languages      &C/C++, Python, Haskell, Java, C\#, Scala\\
-  &Operating Systems	        &Gentoo Linux, Arch Linux, Microsoft Windows, Ubuntu\\
-  &Utilities                  &Vim, Git, GDB, Shell Scripting, Visual Studio, GNU Octave, OpenCV\\
-  &Platforms                  &Windows Phone, Microsoft Kinect, Arduino\\
-\end{tabular}
+  \sectionspace
 
-\vspace{-0.6cm}
-\section*{Relevant Courses}
-\vspace{-0.3cm}
-\begin{tabular}{L{0.05cm} L{5.8cm} L{6.5cm} L{7.5cm} L{8cm} L{13cm}}
-  & Introduction to Programming(A*)  & Logic in Computer Science & Abstract Algebra\\
-& Discrete Mathematics             & Data Structures and Algorithms(**) & Computer Organization(**)\\
-& Probability and Statistics (**)  & Computer Systems Security(**) & Linear Algebra, O.D.Es, Calculus\\
-  \vspace{0.3cm}
-& \footnotesize{A* grade for exceptional performance}
-& \footnotesize{*: Course in progress}
-& \footnotesize{**: To be completed by April '16}
-\end{tabular}
+  \runsubsection{}
+  \descriptnonewline{Microsoft code.fun.do winning team
+    member}\location{Twice, IIT Kanpur}
+  \begin{tightitemize}
+  \item Developed PlotIt, a graph-plotting app to parse and plot
+    implicit mathematical functions as graphs. Platform: Windows
+    Phone
+  \item Made a front end to an open source program simulation code
+    using JS
+  \item National \textit{5th} in finals round Coding milestone.
+    Made platform to learn programming; app in
+    \textit{C\#}, backend for program running in \textit{node.js}.
+  \end{tightitemize}
 
-\vspace{-0.8cm}
-\section*{Interests}
-\vspace{-0.3cm}
-\begin{tabular}{L{0.05cm} L{5.8cm} L{6.5cm} L{7.5cm} L{8cm} L{13cm}}
-  & Cyber Security         & Web Development       & Programming Languages\\
-  & Functional Programming & Software Verification & Machine Learning
-\end{tabular}
+  \sectionspace
 
-\vspace{-0.5cm}
-\section*{Miscellaneous}
-\vspace{-0.3cm}
-\begin{tabular}{L{0.05cm} l}
-  & Sporadic blogger at my blog \url{http://acehack.org}\\
-  & Occasional contributor to public Open Source projects on Github \url{https://github.com/sakshamsharma}
-\end{tabular}
+  \runsubsection{}
+  \descriptnonewline{Software Corner Manager}\location{Techkriti 2016,
+    IIT Kanpur}
+  \begin{tightitemize}
+    \item Made a new esoteric programming language for a national
+      competition
+    \item Made online judge for a National High Performance Computing competition, hosted on CDAC’s Param Yuva II Supercomputers
+  \end{tightitemize}
+
+  \section{Miscellaneous}
+  \vspace{\topsep}
+  \begin{tightitemize}
+  \item Blog about Linux, programming etc at
+    \href{http://acehack.org}{acehack.org}
+  \item Contribute often to Open Source
+    (\href{https://github.com/sakshamsharma}{Github}), have many
+    personal projects
+  \item	Attended a full paper-reading seminar-like course on
+    Approximate Computing during Summer ’16 at the Max Planck
+    Institute
+  \item Administer \onepage{various} servers in IIT Kanpur; deploying,
+    automating services
+  \item A \textit{Linux enthusiast}, tinker around with my Linux box
+    in free time
+  \item Various research talks, seminars and guest lectures attended
+    in Germany
+  \end{tightitemize}
+
+\end{minipage}
+
+% ----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+% ----------------------------------------------------------------------------------------
+
+% \newpage % Start a new page
+
+% \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%   \section{Example Section}
+
+% \end{minipage} % The end of the left column
+% \hfill
+% \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%   \section{Example Section 2}
+
+% \end{minipage} % The end of the right column
+
+% ----------------------------------------------------------------------------------------
 
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
