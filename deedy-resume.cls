@@ -72,7 +72,7 @@ Last Updated on \today % Last Updated text
 
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionspace}{\vspace{7pt}}
+\newcommand{\sectionspace}{\vspace{2pt}}
 
 \titleformat{\section}{
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
@@ -84,7 +84,7 @@ Last Updated on \today % Last Updated text
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 \newcommand{\descript}[1]{
-\color{date}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1 \\} \normalfont}
+\color{date}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\descriptbig}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1 \\} \normalfont}
@@ -94,6 +94,9 @@ Last Updated on \today % Last Updated text
 
 \newcommand{\location}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{12pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\textb}[1]{
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{9pt}{9pt}\selectfont {#1} \normalfont}
 
 %-----------------------------------
 %	SECTION TITLE STYLING AND SPACING
