@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=0.9cm, vmargin=0.50cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.2cm, vmargin=1.00cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
 %--------
@@ -30,7 +30,7 @@
 
 \setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig} % The primary font for content text; defines bold, italic and bold-italic as well
 
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight} % The font used where \sfffamily is called
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-Regular} % The font used where \sfffamily is called
 
 %-----------------------------------------------------------------------------------
 %	LAST UPDATED COMMAND
@@ -72,31 +72,35 @@ Last Updated on \today % Last Updated text
 
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionspace}{\vspace{2pt}}
+\newcommand{\sectionspace}{\vspace{4pt}}
 
 \titleformat{\section}{
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{11pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{11pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 \newcommand{\descript}[1]{
-\color{date}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1 \\} \normalfont}
+\color{date}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\descriptbig}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{13pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\descriptnonewline}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1} \normalfont}
 
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont {#1\\} \normalfont}
 
 \newcommand{\textb}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{9pt}{9pt}\selectfont {#1} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{11pt}{11pt}\selectfont {#1} \normalfont}
+
+\newcommand{\bold}[1]{
+  \fontspec[Path = fonts/raleway/]{Raleway-Regular}{#1} \normalfont
+}
 
 %-----------------------------------
 %	SECTION TITLE STYLING AND SPACING
@@ -106,4 +110,5 @@ Last Updated on \today % Last Updated text
 {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 % Local Variables:
+% TeX-engine: xetex
 % End:
