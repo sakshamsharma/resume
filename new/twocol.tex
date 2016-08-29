@@ -1,6 +1,11 @@
 \documentclass{tccv}
 \usepackage[english]{babel}
-\usepackage{fontspec}
+
+
+% Why do I need this one some computers and not others?
+\usepackage{fontspec} % Was able to fix it with this line
+\defaultfontfeatures{
+    Path = /home/saksham/.fonts/fontawesome/opentype/ }
 \usepackage{fontawesome}
 
 \begin{document}
@@ -12,13 +17,14 @@
 \large{Bachelor of Technology}\\
 {Indian Institute of Technology Kanpur}
 
-\vspace{-0.2cm}
+\vspace{-0.4cm}
 \section{Experience and Projects}
-
+\vspace{-0.1cm}
 \begin{experience}
 
   \expitem{Research Intern}{May'16-July-16}
-  {Max Plank Institute for Software Systems, \small{Germany}}
+  {Max Plank Institute for Software Systems, \small{Germany}\\
+  Accuracy improvement of Floating point expressions}
   {
   \item Developed and evaluated a Scala tool to rewrite
     mathematical expressions to increase accuracy using a genetic
@@ -42,8 +48,8 @@
   {Programming Club}
   {
   \item Rewrote, deployed, populated club website \href{http://pclub.in}{pclub.in}
-  \item Organized Freshers' Programming Contest, Linux install fest, conducted
-    programming workshops
+  \item Organized Programming contests, workshops, CTFs and took
+    lectures on programming topics
   }
 
   \expitem{Software Corner Manager}{Dec'16-Mar'16}{Techkriti 2016, IIT
@@ -91,15 +97,16 @@
 \boxwidth=\dimexpr\linewidth-2\fboxsep\relax
 \colorbox[HTML]{F5DD9D}{
   \begin{tabularx}{\boxwidth}{c|l}
-    \faEnvelope &
+    {\faEnvelope} &
     \href{mailto:sakshams@cse.iitk.ac.}{sakshams@(cse.)iitk.ac.in}\\
-    \faRss & \href{http://acehack.org}{acehack.org}\\
-    \faGithub &
+    {\faRss} & \href{http://acehack.org}{acehack.org}\\
+    {\faGithub} &
     \href{https://github.com/sakshamsharma}{sakshamsharma}\\
-    \faLinkedin &
+    {\faLinkedin} &
     \href{https://in.linkedin.com/in/saksham-sharma}{saksham-sharma}\\
   \end{tabularx}}
 
+\vspace{-0.1cm}
 \section{Education}
 
 \begin{yearlist}
