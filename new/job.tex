@@ -1,0 +1,205 @@
+\documentclass{tccv}
+\usepackage[english]{babel}
+
+
+% Why do I need this one some computers and not others?
+\usepackage{fontspec} % Was able to fix it with this line
+\defaultfontfeatures{
+    Path = /home/saksham/.fonts/fontawesome/opentype/ }
+\usepackage{fontawesome}
+
+\begin{document}
+
+\definecolor{myred}{HTML}{801010}
+{\usekomafont{part} \textit{Saksham \textcolor{myred}{Sharma}}}
+\medskip\\
+\large{Computer Science and Engineering}\\
+\large{Bachelor of Technology}\\
+{Indian Institute of Technology Kanpur}
+
+\vspace{-0.4cm}
+\section{Experience and Projects}
+\vspace{-0.1cm}
+\begin{experience}
+
+  \expitem{Accuracy Improvement of Expressions}{}
+  {Max Plank Institute for Software Systems, \small{Germany}\\
+  Fellowship \hfill May'16-July-16}
+  {
+  \item Developed and evaluated a Scala tool to rewrite
+    mathematical expressions to increase accuracy using a genetic
+    algorithm
+  \item Obtained successful results, improving expression error by
+    ~50\%, useful for scientific and embedded applications
+  }
+
+  \expitem{Full Stack Developer}{May'15-Present}
+  {Internship under DoFA IIT Kanpur}
+  {
+  \item Adjudged as one of the best interns as a freshman
+  \item Implemented various features in a large scale polyglot web
+    application with an extensive technology stack, in a team setup
+  \item Continue coding, as a full-stack developer;
+    managing the search component in Node.js, Scala, ElasticSearch,
+    Angular, TypeScript
+  }
+
+  \expitemtwo{Coordinator}{Apr'16-Present}
+  {Programming Club}
+  {
+  \item Rewrote, deployed, populated club website \href{http://pclub.in}{pclub.in}
+  \item Organized Programming contests, workshops, CTFs and took
+    lectures on programming topics
+  }
+
+  \expitem{Software Corner Manager}{Dec'16-Mar'16}{Techkriti 2016, IIT
+    Kanpur}
+  {
+  \item Made an esoteric language for a national
+    competition based on x86 assembly
+  \item Made online judge for High Performance Computing contest
+    on the Param supercomputer
+  }
+
+  \expitem{Member, Team Robocon}{Oct'14-Mar'15}
+  {ABU Robocon '15, Dr. Bhaskardas Gupta}
+  {
+  \item Worked on 2 semi-autonomous full-size badminton playing bots
+  using Image-processing, Kinect and Stereo Vision to track and
+    predict shuttle path
+  \item Finished 11th among 85 participating teams on a National Level
+  }
+
+  \expitemtwo{Winning team twice}{\textit{Microsoft code.fun.do}}{}
+  {
+  \item Developed an app to parse expressions and
+    plot implicit mathematical function graphs
+  \item National \textit{5th} in Finals Coding milestone.
+    Platform to learn programming, on our online judge
+  }
+
+\end{experience}
+
+\vspace{-0.6cm}
+\section{Miscellaneous}
+\vspace{0.2cm}
+\begin{thinitemize}
+\item \textbf{Blog} about Linux, programming etc \href{http://acehack.org}{here}
+\item Contribute to \textbf{Open Source}
+  on \href{https://github.com/sakshamsharma}{Github}
+\item Administer servers in IIT Kanpur; deploying,
+  automating services for campus community
+\item Microsoft Build The Shield, National 10th in the final round of CTF
+\end{thinitemize}
+
+\needspace{0.5\textheight}
+\newdimen\boxwidth
+\boxwidth=\dimexpr\linewidth-2\fboxsep\relax
+\colorbox[HTML]{F5DD9D}{
+  \begin{tabularx}{\boxwidth}{c|l}
+    {\faEnvelope} &
+    \href{mailto:sakshams@cse.iitk.ac.}{sakshams@(cse.)iitk.ac.in}\\
+    {\faRss} & \href{http://acehack.org}{acehack.org}\\
+    {\faGithub} &
+    \href{https://github.com/sakshamsharma}{sakshamsharma}\\
+    {\faLinkedin} &
+    \href{https://in.linkedin.com/in/saksham-sharma}{saksham-sharma}\\
+  \end{tabularx}}
+
+\vspace{-0.1cm}
+\section{Education}
+
+\begin{yearlist}
+
+\item[IIT Kanpur]{\small{2014 -- Now}}
+  {Bachelor of Technology}
+  {CPI/GPA: \textbf{10.0}/10.0}
+
+\item[D.A.V. Public School]{\small{2014}}
+  {Senior Secondary Grade 12}
+  {Score: 97.6\%}
+
+\end{yearlist}
+
+\vspace{-0.7cm}
+\section{Awards and Achievements}
+
+\begin{yearlist}
+
+\item{\small{2014-16}}
+  {Institute Rank \textbf{1}, IIT Kanpur}
+  {\small{CPI: 10.0 in 4 Semesters}}
+
+\item{\small{2015}}
+  {Academic Excellence Award}
+  {\small{IIT Kanpur, 2014-2015}}
+
+\item{\small{2014}}
+  {All India Rank \textbf{10}}
+  {\small{JEE Mains, 1.5 million candidates}}
+
+\item {\small{2014}}
+  {All India Rank \textbf{138}}
+  {\small{JEE Advanced, 150,000 candidates}}
+
+\item {\small{2014}}
+  {Aditya Birla Scholarship}
+  {\small{Among 15 IITans selected}}
+
+\item {\small{2013}}
+  {KVPY Scholarship awardee}
+  {\small{Scholarship by Govt. of India}}
+
+\item {\small{2010}}
+  {National Talent Search (NTS)}
+  {\small{Scholarship by Govt. of India}}
+
+\end{yearlist}
+
+\vspace{-0.6cm}
+\section{Coursework}
+\begin{tabularx}{\linewidth}{ r l }
+  Data Structures and Algorithms & A*\\
+  Computer Organization & A*\\
+  Introduction to Programming & A*\\
+  Tools for Computing & A*\\
+  Computer Systems Security & A\\
+  Discrete Mathematics & A\\
+  Abstract Algebra, Logic & A\\
+  Probability and Statistics & A\\
+  \footnotesize{A* grade for exceptional performance}&\\
+\end{tabularx}
+
+\vspace{-0.4cm}
+\section{Technical Skills}
+
+C/C++, Scala, Python, Node.js, Haskell, Lisp
+
+\vspace{0.2cm}
+\begin{factlist}
+
+\item{\small{Web}}
+  {Express.js, Akka, JavaScript, TypeScript, Angular}
+
+  \vspace{-0.2cm}
+\item{\small{O.S.}}
+  {Gentoo, Arch Linux, Ubuntu}
+
+  \vspace{-0.2cm}
+\item {\small{Utilities}}
+  {Emacs and Vim both, \LaTeX, Linux Shell utilities, Git, Docker,
+    Kubernetes, GDB, ElasticSearch}
+
+\end{factlist}
+
+\vspace{-0.3cm}
+\section{Interests}
+Systems Security, Networks, Open Source,\\Functional
+Programming, Web Development
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: xelatex
+%%% TeX-master: t
+%%% End:
