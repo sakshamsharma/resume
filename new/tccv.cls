@@ -31,7 +31,7 @@
 \usepackage{enumitem}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
+\RequirePackage[hmargin=1.25cm,vmargin=1.00cm,twocolumn,columnsep=0.8cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
 
 \newenvironment{tightitemize}
@@ -146,15 +146,16 @@
 
 \newenvironment{experience}{
   \newcommand\expitem[4]{
-    \textit{\textbf{##1}}\hfill \normalsize{##2}\\
+    \textit{\textbf{##1}}\hfill \normalsize\textit{##2}\\
     \normalsize \textit{##3}\\
-    \vspace{-0.4cm}
+    \vspace{-0.5cm}
     \begin{thinitemize}
       ##4
     \end{thinitemize}
+    \vspace{-0.2cm}
   }
   \newcommand\expitemtwo[4]{
-    \textit{\textbf{##1}}, \normalsize{##3}\hfill \normalsize{##2}\\
+    \textit{\textbf{##1}} \hfill \normalsize\textit{##3}\hfill \normalsize\textit{##2}\\
     \vspace{-0.4cm}
     \begin{thinitemize}
       ##4
@@ -172,7 +173,7 @@
     \renewcommand\item[4][]{
     {\sc ##2} & {\bfseries ##3} \\
     \ifstrempty{##1}{}{& {\sc ##1} \\}
-    & {\it ##4}\vspace{0.1cm}\\}
+    & {\it ##4}\vspace{-0.3cm}\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
 
