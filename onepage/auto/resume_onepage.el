@@ -8,6 +8,7 @@
     "tccv"
     "tccv10"
     "babel"
+    "comment"
     "fontspec"
     "fontawesome")
    (TeX-add-symbols

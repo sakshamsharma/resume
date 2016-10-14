@@ -1,5 +1,6 @@
 \documentclass{tccv}
 \usepackage[english]{babel}
+\usepackage{comment}
 
 
 % Why do I need this one some computers and not others?
@@ -18,7 +19,7 @@
 {Indian Institute of Technology Kanpur}
 
 \vspace{-0.5cm}
-\section{Experience and Projects}
+\section{Work Experience}
 \vspace{-0.1cm}
 \begin{experience}
 
@@ -35,7 +36,7 @@
   }
 
   \expitem{Full Stack Developer}{May'15-Present}
-  {Internship under DoFA IIT Kanpur}
+  {NYC Office IIT Kanpur, Prof. Manindra Agarwal}
   {
   \item Adjudged as one of the best interns as a freshman
   \item Implemented various features in a large scale polyglot web
@@ -43,7 +44,32 @@
     (Phabricator, Git)
   \item Continue coding, as a full-stack developer;
     managing the search component in Node.js, Scala, ElasticSearch,
-    Angular, TypeScript
+    TypeScript, Haskell
+  }
+\end{experience}
+
+\vspace{-0.5cm}
+\section{Projects}
+\begin{experience}
+
+  \expitem{moVi: Mobile Video Protocol}{Aug'16-Now}
+  {Undergraduate Project, Prof. Sandeep Shukla}
+  {
+    \item Developing a video communication protocol robust to network,
+      IP changes.
+    \item Using stateless UDP, a custom video synchronization
+      protocol to ensure reliability and security.
+  }
+
+  \expitem{Anonymous private pair-matching platform}{}
+  {Prof. P. Kurur, Prof. S. Nandakumar}
+  {
+  \item Designed, writing an algorithm
+    for fully anonymous matching of couples, where end users put zero
+    trust in the server (admin) and it's code.
+  \item Using homomorphic two party computation (assisted by an
+    un-trusted server) and asymmetric encryption to
+    ensure confidentiality and integrity.
   }
 
   \expitemtwo{HTTP-Over-Protocol}{}
@@ -52,22 +78,6 @@
   \item HTTP wrapper for bypassing proxy restrictions and using
     arbitrary protocols \href{http://acehack.org/hop}{(acehack.org/hop)}
   \item Top 5 on Github trending (C++) for 2 days
-  }
-
-  \expitemtwo{Coordinator}{}
-  {Programming Club and InfoSecIITK}
-  {
-  \item Rewrote, deployed, populated club website \href{http://pclub.in}{pclub.in}
-  \item Organized Programming contests, workshops, CTFs and took
-    lectures on programming topics
-  }
-
-  \expitemtwo{Software Manager}{}{\hfill Techkriti 2016, IIT Kanpur}
-  {
-  \item Made an esoteric language for a national
-    competition based on x86 assembly
-  \item Made online judge for High Performance Computing contest
-    on the Param supercomputer
   }
 
   \expitem{Member, Team Robocon}{Oct'14-Mar'15}
@@ -79,7 +89,8 @@
   \item Finished 11th among 85 participating teams on a National Level
   }
 
-  \expitemtwo{Winner twice}{Microsoft code.fun.do hackathon}{}
+  \expitemtwo{Microsoft code.fun.do hackathon}{Winner twice}
+  {}
   {
   \item An app to parse, plot implicit mathematical graphs
   \item National \textit{5th} in Finals Coding milestone.
@@ -87,11 +98,6 @@
   }
 
 \end{experience}
-
-\vspace{-0.8cm}
-\section{Interests}
-Systems Security, Networks, Open Source,\\Functional
-Programming, Web Development
 
 \vspace{-0.3cm}
 
@@ -101,8 +107,8 @@ Programming, Web Development
 \colorbox[HTML]{F5DD9D}{
   \begin{tabularx}{\boxwidth}{c|l}
     {\faEnvelope} &
-    \href{mailto:sakshams@cse.iitk.ac.}{sakshams@(cse.)iitk.ac.in}\\
-    {\faRss} & \href{http://acehack.org}{acehack.org}\\
+    \href{mailto:saksham0808@gmail.com}{saksham0808@gmail.com}\\
+    {\faRss} & \href{http://sakshamsharma.com}{sakshamsharma.com}\\
     {\faGithub} &
     \href{https://github.com/sakshamsharma}{sakshamsharma}\\
     {\faMobile} &
@@ -116,15 +122,11 @@ Programming, Web Development
 
 \item[IIT Kanpur]{\small{2014 -- Now}}
   {Bachelor of Technology}
-  {CPI/GPA: \textbf{10.0}/10.0}
-
-\item[]{\small{2014}}
-  {Senior Secondary Grade 12}
-  {Score: 97.6\%}
+  {CPI/\textbf{CGPA: 10.0/10.0}}
 
 \end{yearlist}
 
-\vspace{-0.7cm}
+\vspace{-0.5cm}
 \section{Awards and Achievements}
 
 \begin{yearlist}
@@ -147,11 +149,15 @@ Programming, Web Development
 
 \item {\small{2014}}
   {Aditya Birla Scholarship}
-  {\small{Among 15 IITans selected}}
+  {\small{Among 15 top students from all IITs}}
+
+\item {\small{2014}}
+  {Merit Certificate, Overall \textbf{97.6\%}}
+  {\small{Grade 12 National Examination, CBSE}}
 
 \item {\small{2013}}
   {KVPY Scholarship awardee}
-  {\small{Scholarship by Govt. of India}}
+  {\small{Scholarship by IISc, Govt. of India}}
 
 \item {\small{2010}}
   {National Talent Search (NTS)}
@@ -167,16 +173,17 @@ Programming, Web Development
   Introduction to Programming & A*\\
   Tools for Computing & A*\\
   Computer Systems Security & A\\
-  Discrete Mathematics & A\\
-  Abstract Algebra, Logic & A\\
-  Probability and Statistics & A\\
-  \footnotesize{A* grade for exceptional performance}&\\
+  Discrete, Abstract maths, Logic & A\\
+  Computer Networks & $i$\\
+  Operating Systems & $i$\\
+  \footnotesize{A*: grade for exceptional
+    performance}&\footnotesize{$i$: Current}\\
 \end{tabularx}
 
 \vspace{-0.4cm}
 \section{Technical Skills}
 
-C/C++, Scala, Python, Node.js, Haskell, Lisp
+C/C++, Python, Node.js, Scala, Haskell
 
 \vspace{0.2cm}
 \begin{factlist}
@@ -184,13 +191,13 @@ C/C++, Scala, Python, Node.js, Haskell, Lisp
 \item{\small{Web}}
   {Express.js, Akka, JavaScript, TypeScript, Angular}
 
-  \vspace{-0.2cm}
-\item{\small{O.S.}}
-  {Gentoo, Arch Linux, Ubuntu}
+% \begin{comment}
+% \item{\small{O.S.}}
+%   {Gentoo, Arch Linux, Ubuntu}
+% \end{comment}
 
-  \vspace{-0.2cm}
-\item {\small{Utilities}}
-  {Emacs and Vim both, \LaTeX, Linux Shell utilities, Git, Docker,
+\item {\small{Utils}}
+  {Emacs, Vim, Linux utils, Git, Docker,
     Kubernetes, GDB, ElasticSearch}
 
 \end{factlist}
@@ -199,7 +206,7 @@ C/C++, Scala, Python, Node.js, Haskell, Lisp
 \section{Miscellaneous}
 \vspace{0.2cm}
 \begin{thinitemize}
-\item \textbf{Blog} about Linux, programming at \href{http://acehack.org}{acehack.org}
+\item \textbf{Blog} about networks, coding at \href{http://acehack.org}{acehack.org}
 \item Contribute to \textbf{Open Source}
   on \href{https://github.com/sakshamsharma}{Github}
 \item Administer servers in IIT Kanpur; deploying,
