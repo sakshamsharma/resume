@@ -1,0 +1,6 @@
+*.aux
+*.out
+*.log
+*.dvi
+*.ps
+auto/

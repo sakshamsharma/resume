@@ -5,9 +5,12 @@
 
 % Why do I need this one some computers and not others?
 \usepackage{fontspec} % Was able to fix it with this line
-\defaultfontfeatures{
-    Path = /home/saksham/.fonts/fontawesome/opentype/ }
+\defaultfontfeatures{Path = /home/saksham/.fonts/fontawesome/opentype/ }
 \usepackage{fontawesome}
+
+\newcommand{\linkbold}[1]{
+  \textcolor{black}{\normalfont{\textit{\textbf{#1}}}}
+}
 
 \begin{document}
 
@@ -25,18 +28,21 @@
 
   \expitem{Accuracy Improvement of Expressions}{}
   {Max Plank Institute for Software Systems, \small{Germany}\\
-  Fellowship, under Dr. Eva Darulová \hfill May'16-July-16}
+  Fellowship, under
+  \href{http://www.mpi-sws.org/~eva}{\textcolor{gray}{Dr. Eva
+      Darulová}}
+  \hfill May'16-July-16}
   {
   \item Developed and evaluated a Scala tool to rewrite
     mathematical floating-point expressions and increase their
     accuracy using a genetic algorithm
   \item Obtained successful results, improving expression errors by
-    $\textasciitilde50\%$, useful for scientific and embedded
-    applications.
+    $\textasciitilde50\%$, for scientific and embedded uses.
   }
 
   \expitem{Full Stack Developer}{May'15-Present}
-  {NYC Office IIT Kanpur, Prof. Manindra Agarwal}
+  {NYC Office IIT Kanpur,
+    \href{http://cse.iitk.ac.in/~manindra}{\textcolor{gray}{Prof. Manindra Agarwal}}}
   {
   \item Adjudged as one of the best interns as a freshman
   \item Implemented various features in a large scale polyglot web
@@ -52,41 +58,46 @@
 \section{Projects}
 \begin{experience}
 
-  \expitem{moVi: Mobile Video Protocol}{Aug'16-Now}
-  {Undergraduate Project, Prof. Sandeep Shukla}
+  \expitem{\href{https://github.com/netsecIITK/moVi}{\linkbold{moVi:
+        Mobile Video Protocol}}}{Aug'16-Now}
+  {Undergraduate Project,
+    \href{http://cse.iitk.ac.in/~sandeeps}{Prof. Sandeep Shukla}}
   {
-    \item Developing a video communication protocol robust to network,
+    \item Developing a UDP based video communication protocol robust to network,
       IP changes.
     \item Using stateless UDP, a custom video synchronization
       protocol to ensure reliability and security.
   }
 
-  \expitem{Anonymous private pair-matching platform}{}
-  {Prof. P. Kurur, Prof. S. Nandakumar}
+  \expitem{\href{https://github.com/pclubiitk/puppy-love}{\linkbold{Anonymous
+        secure pair-matching platform}}}{}
+  {\href{http://cse.iitk.ac.in/~ppk}{Prof. P. Kurur},
+    \href{http://cse.iitk.ac.in/~satyadev}{\textcolor{gray}{Prof. S. Nandakumar}}}
   {
-  \item Designed, writing an algorithm
-    for fully anonymous matching of couples, where end users put zero
+  \item Designed, implementing an algorithm
+    for secure, anonymous matching of couples, where end users put zero
     trust in the server (admin) and it's code.
-  \item Using homomorphic two party computation (assisted by an
+  \item Using homomorphic two party computation (aided by an
     un-trusted server) and asymmetric encryption to
     ensure confidentiality and integrity.
   }
 
-  \expitemtwo{HTTP-Over-Protocol}{}
-  {Prof. Sandeep Shukla}
+  \expitemtwo{\href{https://github.com/sakshamsharma/HTTP-Over-Protocol}{\linkbold{HTTP-Over-Protocol}}}{}
+  {\href{http://cse.iitk.ac.in/~sandeeps}{Prof. Sandeep Shukla}}
   {
   \item HTTP wrapper for bypassing proxy restrictions and using
     arbitrary protocols \href{http://acehack.org/hop}{(acehack.org/hop)}
   \item Top 5 on Github trending (C++) for 2 days
   }
 
-  \expitem{Member, Team Robocon}{Oct'14-Mar'15}
-  {ABU Robocon '15, Dr. Bhaskardas Gupta}
+  \expitem{Badminton playing robots}{Oct'14-Mar'15}
+  {ABU Robocon '15,
+    \href{http://home.iitk.ac.in/~dasgupta}{Prof. Bhaskardas Gupta}}
   {
   \item Worked on 2 semi-autonomous full-size badminton playing bots
   using Image-processing, Kinect and Stereo Vision to track and
     predict shuttle path
-  \item Finished 11th among 85 participating teams on a National Level
+  \item Overall 11th among 85 teams in national round
   }
 
   \expitemtwo{Microsoft code.fun.do hackathon}{Winner twice}
@@ -131,7 +142,7 @@
 
 \begin{yearlist}
 
-\item{\small{2014-16}}
+\item{\small{Now}}
   {Institute Rank \textbf{1}, IIT Kanpur}
   {\small{CPI: 10.0 in 4 Semesters}}
 
@@ -152,7 +163,7 @@
   {\small{Among 15 top students from all IITs}}
 
 \item {\small{2014}}
-  {Merit Certificate, Overall \textbf{97.6\%}}
+  {National Merit, Overall \textbf{97.6\%}}
   {\small{Grade 12 National Examination, CBSE}}
 
 \item {\small{2013}}
@@ -189,12 +200,10 @@ C/C++, Python, Node.js, Scala, Haskell
 \begin{factlist}
 
 \item{\small{Web}}
-  {Express.js, Akka, JavaScript, TypeScript, Angular}
+  {Express, Akka, JavaScript}
 
-% \begin{comment}
-% \item{\small{O.S.}}
-%   {Gentoo, Arch Linux, Ubuntu}
-% \end{comment}
+\item{\small{O.S.}}
+  {Gentoo, Arch Linux, Ubuntu}
 
 \item {\small{Utils}}
   {Emacs, Vim, Linux utils, Git, Docker,
@@ -209,6 +218,8 @@ C/C++, Python, Node.js, Scala, Haskell
 \item \textbf{Blog} about networks, coding at \href{http://acehack.org}{acehack.org}
 \item Contribute to \textbf{Open Source}
   on \href{https://github.com/sakshamsharma}{Github}
+\item Coordinator of Programming Club, InfoSec IITK, organize
+  contests, CTFs, lectures (\href{http://pclub.in}{pclub.in})
 \item Administer servers in IIT Kanpur; deploying,
   automating services for campus community
 \item Microsoft Build The Shield, National 10th in the final round of CTF
