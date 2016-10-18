@@ -381,6 +381,10 @@ BoldItalicFont=*-SemiboldIt
 \newcommand*{\ifempty}[3]{\ifthenelse{\isempty{#1}}{#2}{#3}}
 
 
+\newcommand{\linkbold}[1]{
+  \textcolor{black}{\textbf{#1}}
+}
+
 % -------------------------------------------------------------------------------
 % Commands for elements of CV structure
 % -------------------------------------------------------------------------------
