@@ -148,15 +148,15 @@
   \newcommand\expitem[4]{
     \textit{\textbf{##1}}\hfill \normalsize\textit{##2}\\
     \normalsize \textit{##3}\\
-    \vspace{-0.5cm}
+    \vspace{-0.4cm}
     \begin{thinitemize}
       ##4
     \end{thinitemize}
-    \vspace{-0.2cm}
+    \vspace{-0.1cm}
   }
   \newcommand\expitemtwo[4]{
     \textit{\textbf{##1}} \hfill \normalsize\textit{##3}\hfill \normalsize\textit{##2}\\
-    \vspace{-0.4cm}
+    \vspace{-0.3cm}
     \begin{thinitemize}
       ##4
     \end{thinitemize}
