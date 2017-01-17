@@ -423,7 +423,7 @@ BoldItalicFont=*-SemiboldIt
           \setbool{istart}{false}%
         }%
         {\acvHeaderSocialSep}%
-        \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+        \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
       }%
       \ifthenelse{\isundefined{\@github}}%
       {}%
