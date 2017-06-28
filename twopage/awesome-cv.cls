@@ -536,7 +536,20 @@ BoldItalicFont=*-SemiboldIt
     \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}
-  \vspace{-2mm}
+  \vspace{-3mm}
+}
+
+\newcommand*{\extraentry}[5]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{-1pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth -
+    3cm} R{3cm}}
+    \ifempty{#2#3}
+    {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+    {\entrytitlestyle{#2} \entrypositionstyle{#1} & \entrylocationstyle{#4} \\}
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}
+  \vspace{-3mm}
 }
 
 % Define an environment for cvsubentry
