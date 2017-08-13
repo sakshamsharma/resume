@@ -1,7 +1,12 @@
 \documentclass{tccv}
 \usepackage[english]{babel}
 \usepackage{comment}
+\usepackage{enumitem}
 
+\newlist{inlinelist}{itemize*}{1}
+\setlist*[inlinelist,1]{
+  label={$\bullet$\hspace{0.07cm}},
+}
 
 % Why do I need this one some computers and not others?
 \usepackage{fontspec} % Was able to fix it with this line
@@ -11,6 +16,8 @@
 \newcommand{\linkbold}[1]{
   \textcolor{black}{\normalfont{\textit{\textbf{#1}}}}
 }
+
+\newcommand{\astar}[0]{\small{\textit{A$*$}}}
 
 \begin{document}
 
@@ -23,20 +30,29 @@
 
 \vspace{-0.5cm}
 \section{Work Experience}
-% \vspace{-0.1cm}
 \begin{experience}
+  \expitem{Software Engineering Intern}{May-Jul'17}
+  {Google Seattle, GKE/Kubernetes Security Team}
+  {
+  \item Worked on Kubernetes, Google's Open Source container orchestration platform, to
+    encrypt resources in cluster database, required by industry for security hardening.
+  \item Used envelope encryption using Key-Encryption-Key and Data-Encryption-Key to allow
+    using a remote root-of-trust for encryption.
+  \item Allowed key rotations in a multi-master system.
+  \item Feature released in v1.7, integration with Google's Cloud Key Management service
+    on track for v1.8.
+  }
 
-  \expitem{Accuracy Improvement of Expressions}{}
+  \expitem{Summer Research Fellow}{May-Jul'16}
   {Max Plank Institute for Software Systems, \small{Germany}\\
   Fellowship, under
   \href{http://www.mpi-sws.org/~eva}{\textcolor{gray}{Dr. Eva
-      Darulová}}
-  \hfill May-July'16}
+      Darulová}}}
   {
   \item Developed, evaluated a Scala tool to rewrite
     mathematical floating-point expressions and increase their
     accuracy using a genetic algorithm
-  \item Improved expression errors by
+  \item Decreased floating point errors in expressions by
     $\textasciitilde50\%$, useful for scientific and embedded uses.
   }
 
@@ -47,100 +63,27 @@
   \item Implemented various features in a large scale polyglot web
     application with an extensive technology stack in a team setup
     (Phabricator, Git)
-  \item Designed and wrote the complete search component in Node.js, Scala, ElasticSearch, TypeScript
+  \item Designed and wrote the complete search stack in Node.js, Scala, ElasticSearch, TypeScript
   }
 \end{experience}
 
-\vspace{-0.6cm}
-\section{Projects}
-\begin{experience}
+\vspace{-0.8cm}
 
-  \expitem{\href{https://github.com/netsecIITK/moVi}{\linkbold{moVi:
-        Mobile Video Protocol}}}{Sept'16-Now}
-  {\href{http://cse.iitk.ac.in/~sandeeps}{Prof. Sandeep Shukla}}
-  {
-    \item Developed a UDP based video chat client robust to network,
-      IP changes, akin to \href{https://mosh.org}{Mosh}.
-    \item Implemented State Synchronization Protocol, UDP Hole
-      Punching, dynamic tweaking of video quality to maintain
-      performance in bad network.
-  }
-
-  \expitem{\href{https://github.com/pclubiitk/puppy-love}{\linkbold{Anonymous
-        secure pair-matching}}}{Oct-Nov'16}
-  {\href{http://cse.iitk.ac.in/~ppk}{Prof. P. Kurur},
-    \href{http://cse.iitk.ac.in/~satyadev}{\textcolor{gray}{Prof. S. Nandakumar}}}
-  {
-  \item Designed, implemented an algorithm
-    for secure, anonymous matching of couples, where end users put
-    zero trust in the server (admin) and its code.
-  \item Use Diffie Hellman inspired secure two party computation to
-    ensure confidentiality and integrity.
-  }
-
-  \expitem{\href{https://github.com/sakshamsharma/HTTP-Over-Protocol}{\linkbold{HTTP-Over-Protocol:
-        Web proxy}}}{Aug '16}
-  {\href{http://cse.iitk.ac.in/~sandeeps}{Prof. Sandeep Shukla}}
-  {
-  \item Proxy for bypassing proxy restrictions by wrapping arbitrary data in
-    HTTP packets.
-  \item Top 5 on Github trending (C++) for 2 days
-  }
-
-  \expitem{Badminton playing robots}{Oct'14-Mar'15}
-  {ABU Robocon '15,
-    \href{http://home.iitk.ac.in/~dasgupta}{Prof. Bhaskardas Gupta}}
-  {
-  \item Built 2 semi-autonomous full-size badminton playing bots
-  using Image-processing, Kinect and Stereo Vision to track,
-    predict shuttle path
-  \item Overall 11th among 85 teams in national round
-  }
-
-  \expitem{Microsoft code.fun.do hackathon}{Jan, Sept '15}
-  {Two time winner, IIT Kanpur}
-  {
-  \item An app to parse, plot implicit mathematical graphs
-  \item Platform to learn coding, using an online judge
-  }
-
-\end{experience}
-
-\vspace{-0.3cm}
-
-\needspace{0.5\textheight}
-\newdimen\boxwidth
-\boxwidth=\dimexpr\linewidth-2\fboxsep\relax
-\colorbox[HTML]{F5DD9D}{
-  \begin{tabularx}{\boxwidth}{c|l}
-    {\faEnvelope} &
-    \href{mailto:saksham0808@gmail.com}{saksham0808@gmail.com}\\
-    {\faRss} & \href{http://sakshamsharma.com}{sakshamsharma.com}\\
-    {\faGithub} &
-    \href{https://github.com/sakshamsharma}{sakshamsharma}\\
-    % {\faMobile} &
-    % \href{tel:+917755058004}{+91-7755058004}\\
-  \end{tabularx}}
-
-\vspace{-0.1cm}
 \section{Education}
-
 \begin{yearlist}
-
-\item[IIT Kanpur]{\small{2014--Now}}
+\item[Final Year, IIT Kanpur]{\small{2014--Now}}
   {Bachelor of Technology}
   {\textbf{CGPA: 10.0/10.0}}
-
 \end{yearlist}
 
-\vspace{-0.5cm}
+\vspace{-0.4cm}
 \section{Awards and Achievements}
 
 \begin{yearlist}
 
 \item{\small{Now}}
   {Institute Rank \textbf{1}, IIT Kanpur}
-  {\small{CPI: 10.0 in 4 Semesters}}
+  {\small{SPI/GPA: 10.0 in all 6 Semesters}}
 
 \item{\small{2015}}
   {Academic Excellence Award}
@@ -160,7 +103,7 @@
 
 \item {\small{2014}}
   {National Merit, Overall \textbf{97.6\%}}
-  {\small{Grade 12 National Examination, CBSE}}
+  {\small{Grade 12/High School, CBSE}}
 
 \item {\small{2013}}
   {KVPY Scholarship awardee}
@@ -172,45 +115,93 @@
 
 \end{yearlist}
 
-\vspace{-0.6cm}
+\vspace{-0.3cm}
+
+\needspace{0.5\textheight}
+\newdimen\boxwidth
+\boxwidth=\dimexpr\linewidth-2\fboxsep\relax
+\colorbox[HTML]{F5DD9D}{
+  \begin{tabularx}{\boxwidth}{c|l}
+    {\faEnvelope} &
+    \href{mailto:saksham0808@gmail.com}{saksham0808@gmail.com}\\
+    {\faRss} & \href{http://sakshamsharma.com}{sakshamsharma.com}\\
+    {\faGithub} &
+    \href{https://github.com/sakshamsharma}{sakshamsharma}\\
+    % {\faMobile} &
+    % \href{tel:+917755058004}{+91-7755058004}\\
+  \end{tabularx}}
+
+\vspace{-0.1cm}
+
+\section{Projects}
+\begin{experience}
+  \expitem{Tipsy: Tool to provide tips and corrections for C programs en masse}{}
+  {Undergraduate project, {\href{http://cse.iitk.ac.in/~karkare}{Prof. Amey Karkare}}}
+  {
+    \item Created a tool in Scala to analyze and cluster C programs from large programming courses, to provide suggestions and tips to weak students.
+    \item Reduced C programs to a linear high level representation, which was later used for finding shortest distance between 2 programs.
+    \item Clustered programs to provide corrections based on similar programs.
+  }
+
+  \expitem{\href{https://github.com/pclubiitk/puppy-love}{\linkbold{Private
+        secure couple-matching}}}{}
+  {\href{http://cse.iitk.ac.in/~ppk}{Prof. P. Kurur},
+    \href{http://cse.iitk.ac.in/~satyadev}{\textcolor{gray}{Prof. S. Nandakumar}}}
+  {
+    \vspace{0.1cm}
+  \item Designed, implemented an algorithm
+    for secure, anonymous matching of couples, where end users put
+    zero trust in the server (admin) and its code.
+  \item Use Diffie Hellman inspired secure two party computation to
+    ensure confidentiality and integrity.
+    \item Deployed on campus, was used by \~2000 users.
+  }
+
+  \expitem{Amigo: A 4-stage x64 Compiler for Golang}{}
+  {Course project, {\href{http://cse.iitk.ac.in/~karkare}{Prof. Amey Karkare}}}
+  {
+    \item Implemented a compiler for a fully functional subset of the Go language, in C++ and Python.
+    \item Used flex and bison to obtain an AST, which is later translated to a x64 assembly.
+    \item Implemented pointers, multiple return values, deeply nested arrays, among other features; along with some low level optimizations.
+  }
+\end{experience}
+
+\vspace{-0.7cm}
 \section{Coursework}
-\begin{tabularx}{\linewidth}{r l}
-  Data Structures and Algorithms & A*\\
-  Computer Organization & A*\\
-  Introduction to Programming & A*\\
-  Tools for Computing & A*\\
-  Computer Systems Security & A\\
-  Discrete, Abstract maths, Logic & A\\
-  Computer Networks & $i$\\
-  Operating Systems & $i$\\
-  \footnotesize{A*: grade for exceptional
-    performance\ \ $i$: Current}&\footnotesize{}\\
-\end{tabularx}
+\begin{inlinelist}
+\item Operating Systems \astar
+\item Compiler Design \astar
+\item Modern Cryptology \astar
+\item Systems Security
+\item Computer Organization \astar
+\item Algorithms \astar
+\item Computer Networks \astar
+\item Computer Architecture
+\item Introduction to programming \astar
+\end{inlinelist}\\
+{\small A*: grade for exceptional performance\par}
 
 \vspace{-0.4cm}
 \section{Technical Skills}
 
 \begin{factlist}
 \item{\small{Langs}}
-  {C, C++, Python, Node.js, Scala}
+  {C/C++, Go, Scala, Python, Node.js}
 
 \item{\small{Web}}
-  {Express, Akka, TypeScript, Angular}
+  {Express.js, Akka, TypeScript, Angular}
 
 \item {\small{Utils}}
-  {Linux shell, Git, Docker,
-    Kubernetes, GDB, ElasticSearch, Emacs, Vim}
+  {Git, Kubernetes, ElasticSearch}
 
 \end{factlist}
 
-\vspace{-0.6cm}
+\vspace{-0.3cm}
 \section{Miscellaneous}
 \vspace{0.2cm}
 \begin{thinitemize}
-\item \textbf{Blog} about Linux, coding at \href{http://acehack.org}{acehack.org}
-\item Contribute to \textbf{Open Source}
-  on \href{https://github.com/sakshamsharma}{Github}
-\item \textbf{Coordinator} of Programming Club, InfoSec IITK, organize
+\item Won \textbf{Microsoft code.fun.do} hackathon twice
+\item \textbf{Coordinator} of Programming Club, InfoSec IITK; organize
   contests, CTFs, lectures (\href{http://pclub.in}{pclub.in})
 \item Administer \textbf{servers} in IIT Kanpur; deploying,
   automating services for campus community
