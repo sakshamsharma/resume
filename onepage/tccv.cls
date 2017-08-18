@@ -171,9 +171,9 @@
 % ]|
 \newenvironment{yearlist}{
     \renewcommand\item[4][]{
-    {\sc ##2} & {\bfseries ##3} \\
-    \ifstrempty{##1}{}{& {\sc ##1} \\}
-    & {\it ##4}\vspace{-0.3cm}\\}
+    {\textsc ##2} & {\bfseries ##3} \\
+    \ifstrempty{##1}{}{& {\textsc ##1} \\}
+    & {\textit ##4}\vspace{-0.3cm}\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
 
