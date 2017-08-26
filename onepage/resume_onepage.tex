@@ -14,7 +14,7 @@
 \usepackage{fontawesome}
 
 \newcommand{\linkbold}[1]{
-  \textcolor{black}{\normalfont{\textit{\textbf{#1}}}}
+  \textcolor{black}{\large{\textit{\textbf{#1}}}}
 }
 
 \newcommand{\astar}[0]{\small{\textit{A$*$}}}
@@ -25,7 +25,6 @@
 {\usekomafont{part} \textit{Saksham \textcolor{myred}{Sharma}}}
 \medskip\\
 \large{Computer Science and Engineering}\\
-% \large{$3^{rd}$ year undergraduate}\\
 {Indian Institute of Technology Kanpur}
 
 \vspace{-0.5cm}
@@ -34,24 +33,23 @@
   \expitem{Software Engineering Intern}{May-Jul'17}
   {Google Seattle, GKE/Kubernetes Security Team}
   {
-  \item Worked on Kubernetes, Google's Open Source container orchestration platform, to
-    encrypt resources in cluster database, required by industry for security hardening.
+  \item Worked on Kubernetes, Google's Open Source \\Docker / container orchestration platform, to
+    encrypt resources at rest, in cluster database (etcd).
+  \item Feature required by industry for security hardening and protection of clusters.
   \item Used envelope encryption using Key-Encryption-Key and Data-Encryption-Key to allow
     using a remote root-of-trust for encryption.
   \item Allowed key rotations in a multi-master system.
-  \item Feature released in v1.7, integration with Google's Cloud Key Management service
-    on track for v1.8.
+  \item Feature released in v1.7, integration with Google's Cloud Key Management service upcoming.
   }
 
   \expitem{Summer Research Fellow}{May-Jul'16}
-  {Max Plank Institute for Software Systems, \small{Germany}\\
-  Fellowship, under
+  {Max Plank Institute, \small{Germany}, under
   \href{http://www.mpi-sws.org/~eva}{\textcolor{gray}{Dr. Eva
       Darulová}}}
   {
   \item Developed, evaluated a Scala tool to rewrite
     mathematical floating-point expressions and increase their
-    accuracy using a genetic algorithm
+    accuracy using a genetic algorithm.
   \item Decreased floating point errors in expressions by
     \~$50\%$, useful for scientific and embedded uses.
   }
@@ -60,14 +58,14 @@
   {NYC Office IIT Kanpur,
     \href{http://cse.iitk.ac.in/~manindra}{\textcolor{gray}{Prof. Manindra Agarwal}}}
   {
-  \item Implemented various features in a large scale polyglot web
-    application with an extensive technology stack in a team setup
-    (Phabricator, Git)
-  \item Designed and wrote the complete search stack in Node.js, Scala, ElasticSearch, TypeScript
+  \item Worked on a large-scale microservice based web
+    application with an extensive and polyglot stack.
+  \item Implemented critical backend functionality, including program evaluation, attachment support.
+  \item Designed, implemented and deployed the full search functionality using Scala, ElasticSearch, TypeScript.
   }
 \end{experience}
 
-\vspace{-0.8cm}
+\vspace{-1.0cm}
 
 \section{Education}
 \begin{yearlist}
@@ -85,9 +83,9 @@
   {Institute Rank \textbf{1}, IIT Kanpur}
   {\small{SPI/GPA: 10.0 in all 6 Semesters}}
 
-\item{\small{2015}}
+\item{\small{2016}}
   {Academic Excellence Award}
-  {\small{IIT Kanpur, 2014-2015}}
+  {\small{IIT Kanpur, 2015 and 2016}}
 
 \item{\small{2014}}
   {All India Rank \textbf{10}}
@@ -138,23 +136,23 @@
   \expitem{Tipsy: Tool to provide tips and corrections for C programs en masse}{}
   {Undergraduate project, {\href{http://cse.iitk.ac.in/~karkare}{Prof. Amey Karkare}}}
   {
-    \item Created a tool in Scala to analyze and cluster C programs from large programming courses, to provide suggestions and tips to weak students.
+    \item Created a tool in Scala to analyze and cluster C programs from large programming courses, to provide tips to weak students.
     \item Reduced C programs to a linear high level representation, which was later used for finding shortest distance between 2 programs.
-    \item Clustered programs to provide corrections based on similar programs.
+    \item Tool provides corrections and hints based on similar programs in the corpus.
   }
 
-  \expitem{\href{https://github.com/pclubiitk/puppy-love}{\linkbold{Private
+  \expitem{\href{https://github.com/pclubiitk/puppy-love}{\linkbold{Anonymous and
         secure couple-matching}}}{}
   {\href{http://cse.iitk.ac.in/~ppk}{Prof. P. Kurur},
     \href{http://cse.iitk.ac.in/~satyadev}{\textcolor{gray}{Prof. S. Nandakumar}}}
   {
     \vspace{0.1cm}
   \item Designed, implemented an algorithm
-    for secure, anonymous matching of couples, where end users put
+    for completely anonymous matching of couples, where end users put
     zero trust in the server (admin) and its code.
   \item Use Diffie Hellman inspired secure two party computation to
     ensure confidentiality and integrity.
-    \item Deployed on campus, was used by \~2000 users.
+    \item Deployed on campus, used by \~1800 users.
   }
 
   \expitem{Amigo: A 4-stage x64 Compiler for Golang}{}
@@ -170,9 +168,9 @@
 \section{Coursework}
 \begin{inlinelist}
 \item Operating Systems \astar
-\item Compiler Design \astar
+\item Compiler Design \astar\\
 \item Modern Cryptology \astar
-\item Systems Security
+\item Systems Security\\
 \item Computer Organization \astar
 \item Algorithms \astar
 \item Computer Networks \astar
@@ -200,13 +198,13 @@
 \section{Miscellaneous}
 \vspace{0.2cm}
 \begin{thinitemize}
-\item Won \textbf{Microsoft code.fun.do} hackathon twice
-\item \textbf{Coordinator} of Programming Club, InfoSec IITK; organize
-  contests, CTFs, lectures (\href{http://pclub.in}{pclub.in})
+\item Won \textbf{Microsoft code.fun.do} hackathon \textbf{twice}.
+\item \textbf{Coordinator} of Programming Club \& InfoSec; organized
+  contests, CTFs, lectures (\href{http://pclub.in}{pclub.in}).
 \item Administer \textbf{servers} in IIT Kanpur; deploying,
-  automating services for campus community
+  automating services for campus community.
 \item Microsoft Build The Shield, National 10th in the final round of
-  \textbf{CTF}
+  \textbf{CTF}.
 \end{thinitemize}
 
 \end{document}
