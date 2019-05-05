@@ -422,6 +422,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false}%
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
       }%
@@ -432,6 +435,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false}%
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
       }%
@@ -442,6 +448,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false} %
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\acvHeaderIconSep\@stackoverflowname}%
       }%
@@ -452,6 +461,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false}%
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\acvHeaderIconSep\@linkedin}%
       }%
@@ -462,6 +474,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false} %
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \href{https://twitter.com/\@twitter}{\faTwitter\acvHeaderIconSep\@twitter}%
       }%
@@ -472,6 +487,9 @@ BoldItalicFont=*-SemiboldIt
         {%
           \setbool{istart}{false} %
         }%
+        {
+          \thinspace
+        }
         {\acvHeaderSocialSep}%
         \faSkype\acvHeaderIconSep\@skype%
       }%
